@@ -41,9 +41,17 @@
 
 # print(f"Sizdan {narx} so'm bo'ldi!\nYana keling kutamiz!")
 #======================================================================
-menyu = ['osh', 'norin', 'manti', 'kabob']
-qabul = input("Qanday taom xohlaysiz!? >> ")
-if qabul.lower() in menyu:
-    print("Buyurtma qabul qilindi! ")
-else:
-    print("Bizda bunday taom yo'q!")
+# menyu = ['osh', 'norin', 'manti', 'kabob']
+# qabul = input("Qanday taom xohlaysiz!? >> ")
+# if qabul.lower() in menyu:
+#     print("Buyurtma qabul qilindi! ")
+# else:
+#     print("Bizda bunday taom yo'q!")
+
+menu = ['osh', 'norin', 'manti', 'kabob']
+buyurtmalar = ['osh', 'manti', 'norin', 'dolma']
+for taom in buyurtmalar:
+    if taom in menu:
+        print(f"Menuda {taom} bor")
+    else:
+        print(f"Kechirasiz menuda {taom} yo'q")
